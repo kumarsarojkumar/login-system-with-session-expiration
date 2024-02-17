@@ -14,7 +14,7 @@ function HomePage() {
     setRemainingTime(30); //set 30 seconds as time remaining
   };
 
-  const { isIdle } = useIdle({ onIdle: handleIdle, idleTime: 0.3});
+  const { isIdle } = useIdle({ onIdle: handleIdle, idleTime: 30});
   console.log("is user idle?", isIdle);
 
   useEffect(() => {
